@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="width:600px; height:300px;">
+
+		<div id="borderi" style="width:600px; height:230px; background:black; position:relative;">
+			<img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBefr8oFg5EK_NW0ytvT8hW-9xdaHZ5A_o-UM2rXApYfag99vYZA" style="width:inherit; height:inherit; ">
+		</div>
+
+		<div id="textPos" style="width:100%; height:50px; position:relative; background:red; ">
+			<p id="pTag">SomeText</p>
+		</div>
+	</div>
+	<div>
+		<input id="text" type="text">
+		<button id="textDeyis" onclick="txtDeyis()">Text Deyis</button>
+	</div>
+	
+	<div style="align-content:center;">
+		<input id="sekil" type="text">
+		<button id="sekilDeyis" onclick="sklDeyis()">Sekil Deyis</button>
+	</div>
+	
+	<div style="align-content:center;">
+		<button id="eff1" onclick="nese()">Effect 1</button>
+		<button id="eff2" onclick="bgc()">Effect 2</button>
+		<button id="eff3" onclick="bold()">Effect 3</button>
+		<button id="eff4" onclick="brd()">Effect 4</button>
+	</div>
+	
+	<script type="text/javascript">
+		function txtDeyis(){
+			var txt = document.getElementById("text").value;
+			var p = document.getElementById("pTag").innerHTML = txt;
+		}
+
+		function sklDeyis(){
+			var skl = document.getElementById("sekil").value;
+			var link = document.getElementById("img").src = skl;
+		}
+		var on=0;
+		function bold(){
+			
+			if(on==0){
+			var qalin = document.getElementById("pTag").style.fontWeight = "900";
+			on++;
+			}
+			else if(on==1){
+				var qalinborder = document.getElementById("pTag").style.fontWeight = "normal";
+				on--;
+			}
+		}
+
+		var bg=0;
+		function bgc(){
+
+			if(bg==0){
+			var clr = document.getElementById("textPos").style.backgroundColor="green";
+			bg++;
+			}
+			else if(bg==1){
+				var clr = document.getElementById("textPos").style.backgroundColor="yellow";
+				bg--;
+			}
+		}
+
+		var say=0;
+		function brd(){
+
+			if(say==0){
+			var clr = document.getElementById("borderi").style.border = "1px solid #0000FF";
+			say++;
+			}
+			else if(say==1){
+				var clr = document.getElementById("borderi").style.border= "transparent";
+				say--;
+			}
+		}
+
+		var hesab=0;
+		function nese(){
+
+			if(hesab==0){
+				document.getElementById("borderi").style.top="60px";
+				document.getElementById("textPos").style.bottom="250px";
+				hesab++;
+			}
+			else if(hesab==1){
+				document.getElementById("borderi").style.top="0px";
+				document.getElementById("textPos").style.bottom="0px";
+				hesab--;
+			}
+		}
+
+	</script>
+
+</body>
+</html>

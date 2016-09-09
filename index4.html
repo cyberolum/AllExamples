@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Prime Numbers</h1>
+<script type="text/javascript">
+    function num(prime)
+    {
+        for(i=2;i<=prime;i++){
+            var isPrime=true;
+
+            for(j=2;j<i;j++){
+                if(i%j==0){
+                    isPrime=false;
+                    break;
+                }
+            }
+
+            if(isPrime){
+                document.write(i+"<br>");
+            }
+        }
+    }
+    num(100);
+    </script>
+    
+</body>
+</html>

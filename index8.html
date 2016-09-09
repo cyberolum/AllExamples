@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="create" onclick="inputCreate()">Create Input</button>
+
+<p id="length"></p>
+<script>
+function inputCreate(){
+	var input = document.createElement("INPUT");
+	document.body.appendChild(input);
+
+	input.setAttribute("id","bas");
+	input.setAttribute("onkeyup","olc()");
+}
+
+function olc() {
+    var uzunlug = document.getElementById("bas").value;
+    var n = uzunlug.length;
+    document.getElementById("length").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
+
+

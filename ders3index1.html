@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var array=[];
+
+	function ortalama(start,end){
+		for(i=start;i<=end;i++){
+			array.push(i);
+		}
+
+		return array;
+	}
+	cemleri=0;
+	function cem(array){
+		for(i=0;i<array.length;i++){
+			cemleri+=array[i];
+		}
+		return cemleri;
+	}
+
+
+	// ortalama(1,10);
+	// console.log(array)
+	console.log(cem(ortalama(1,10)));
+</script>
+
+</body>
+</html>

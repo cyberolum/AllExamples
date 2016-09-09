@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="taxta">
+		<img id="img" style="width:512px; height:512px;" src="http://www.chineselight.com/uploads/130107/1_114009_1.jpg">
+	</div>
+
+	<script type="text/javascript">
+		img =document.getElementById("img")
+
+		var lamp=0;
+
+		img.onclick=function(){
+			
+			if(lamp==0){
+				img.setAttribute('src','http://pngimg.com/upload/bulb_PNG1247.png');
+				lamp=1;
+			}
+			else{
+				img.setAttribute('src','http://www.chineselight.com/uploads/130107/1_114009_1.jpg');
+				lamp=0;
+			}
+		}
+	</script>
+</body>
+</html>

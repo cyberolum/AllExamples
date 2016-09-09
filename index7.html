@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.taxta{
+		width: 400px;
+		height: 400px;
+		border: 1px solid red;
+	}
+
+	.top{
+		width: 100px;
+		height: 100px;
+		background: black;
+		transition:all 3s;
+	}
+</style>
+<body>
+	<div class="taxta">
+		<div class="top" onclick="fun()"></div>
+	</div>
+	<script type="text/javascript">
+	var a=document.getElementsByClassName("top")[0];
+	pos=0;
+		function fun(){
+		da
+			if(pos==0){
+				a.style.marginLeft="300px";
+				pos=1;
+			}
+			else if(pos==1){
+				a.style.marginTop="300px";
+				pos=2;
+			}
+			else if(pos==2){
+				a.style.marginLeft="0px";
+				pos=3;
+			}
+			else{
+				a.style.marginTop="0px";
+				pos=0;
+			}	
+			
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Prime Numbers</h1>
+<script type="text/javascript">
+    function num(prime)
+    {
+        document.write('<h4>&nbsp;'+2+'&nbsp;</h4>')
+        
+        for (var i =3 ; i <=prime ; i++)
+        {
+                
+            for (var u=2 ; u <i; u++)
+            {
+                var divide=i%u
+                
+                if (divide==0)
+                {
+                    break;
+                }
+                else if(u<i-1)
+                {
+                    
+                }
+                else
+                {
+                    document.write('<h4>&nbsp;'+i+'&nbsp;</h4>')
+                }
+            }
+        }
+    }
+    num(5);
+    </script>
+    
+</body>
+</html>
